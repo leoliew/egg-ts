@@ -2,12 +2,12 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
-import ExportRbac from '../../../app/service/Rbac';
+import ExportMongoRbac from '../../../app/service/MongoRbac';
 import ExportTest from '../../../app/service/Test';
 
 declare module 'egg' {
   interface IService {
-    rbac: ExportRbac;
+    mongoRbac: ExportMongoRbac;
     test: ExportTest;
   }
 }
